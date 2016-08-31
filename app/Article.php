@@ -11,20 +11,20 @@ class Article extends Eloquent
     protected $collection = 'Articles';
     public $fillable = ['title', 'price', 'author'];
 
-    private $mapProps = array(
-        'title' => [
-          'type' => 'string',
-          "analyzer" => "standard",
-        ],
-        'price' => [
-          'type' => 'string',
-          "analyzer" => "standard",
-        ],
-        'author' => [
-          'type' => 'string',
-          "analyzer" => "myAnalyzer",
-        ],
-    ); 
+    // private $mapProps = array(
+    //     'title' => [
+    //       'type' => 'string',
+    //       "analyzer" => "standard",
+    //     ],
+    //     'price' => [
+    //       'type' => 'string',
+    //       "analyzer" => "standard",
+    //     ],
+    //     'author' => [
+    //       'type' => 'string',
+    //       "analyzer" => "myAnalyzer",
+    //     ],
+    // ); 
     
     private $customAnalyzer = array(
         'myAnalyzer' => [

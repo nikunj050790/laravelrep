@@ -26,12 +26,12 @@ class Article extends Eloquent
     //     ],
     // ); 
     
-    private $customAnalyzer = array(
-        'myAnalyzer' => [
-            'type' => 'stop',
-            "stopwords" => [","]
-        ]        
-    );
+    // private $customAnalyzer = array(
+    //     'myAnalyzer' => [
+    //         'type' => 'stop',
+    //         "stopwords" => [","]
+    //     ]        
+    // );
 
     public static function createIndexWithCustomAnalyzer($shards = null, $replicas = null)
     {
